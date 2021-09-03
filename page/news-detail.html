@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Piano Shop</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <nav class="bg-yellow">
+    <div class="navbar-container">
+      <div class="navbar navbar-expand-md bg-yellow navbar-light p-0">
+        <div class="custom-navbar-brand ml-3">
+          <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Piano Shop</a>
+        </div>
+        <div class="collapse navbar-collapse mr-auto" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item nav-item-actived">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/home-white-icon.png" height="24px" width="auto" alt="">
+                Trang chủ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/piano-icon.png" height="24px" width="auto" alt="">
+                Đàn piano
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/sale-icon.png" height="24px" width="auto" alt="">
+                Khuyến mãi
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/news-icon.png" height="24px" width="auto" alt="">
+                Tin tức
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/code-icon.png" height="24px" width="auto" alt="">
+                Seri check
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <button class="btn search-icon mr-sm-2 mr-md-0" onclick="showSearch()">
+            <img src="../image/search-icon.png" height="24px" width="auto" alt="">
+          </button>
+          <button class="position-relative btn mr-sm-2 mr-md-0">
+            <img src="../image/cart-icon.png" height="22px" width="auto" />
+            <div class="cart-aler">3</div>
+          </button>
+        </div>
+      </div>
+      <form class="form-group form-search">
+        <input id="search" class="form-control mr-2" type="text" placeholder="Tìm kiếm">
+      </form>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <ul class="breadcrumb custom-breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+        <li class="breadcrumb-item active">Đàn piano 132 có gì hay</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="mb-4">
+            <div class="border bg-white position-relative">
+              <div class="news-time">
+                <h6 class="m-0" style="font-size: 20px; line-height: 16px;">18</h6>
+                <h6 class="m-0">Jan</h6>
+              </div>
+              <div class="news-triangle"></div>
+              <div class="news-image"
+                style="background: url(../image/piano-1.jpg) no-repeat; background-position: center; background-size: cover;">
+              </div>
+              <div class="p-3">
+                <div class="badge bg-yellow rounded-0"># Tin tức</div>
+                <h4>Đàn piano 132 có gì hay</h4>
+                <div class="underline-title"></div>
+                <span>Đăng ngày 18/1/2020</span>
+                <div class="border-top mt-2 pt-3">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida quam quis semper feugiat.
+                    Vestibulum accumsan porttitor ornare. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Integer mattis, tortor et pellentesque tempus, elit velit commodo
+                    ipsum, gravida volutpat ex augue eget lectus. Vivamus quis est sit amet turpis volutpat tincidunt eu
+                    ac orci. Suspendisse suscipit luctus orci ultrices laoreet. Aenean finibus nisl sit amet mi luctus,
+                    et
+                    aliquet tellus feugiat. Phasellus in posuere mi.</p>
+
+                  <p>Nunc mollis egestas mauris, ut tempor neque facilisis non. In id mi gravida, vestibulum mauris in,
+                    malesuada justo. Nullam egestas elit nunc, vitae euismod erat consequat quis. Fusce pharetra, eros
+                    in
+                    viverra hendrerit, quam ante hendrerit purus, ac imperdiet dui nisi id sem. Fusce nibh nisi,
+                    elementum
+                    quis sodales et, sollicitudin ut nisl. Ut efficitur tortor leo, quis placerat enim commodo in. Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sit amet
+                    ultrices diam.</p>
+
+                  <p>Aliquam gravida varius porttitor. In quis justo sagittis, tempus est quis, rutrum ligula. Quisque
+                    efficitur nulla urna, vitae lacinia tellus faucibus id. Orci varius natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Pellentesque eget tempus lectus. Quisque vel sapien id
+                    odio
+                    vestibulum scelerisque quis eget est. Nulla a vestibulum arcu. Proin vel volutpat leo. Nulla cursus
+                    eleifend sagittis. Nam accumsan justo ligula. Suspendisse ac enim nisi. In risus est, egestas eget
+                    dictum quis, varius at enim. Phasellus in molestie tellus, porta porttitor nisi. Duis fringilla
+                    pulvinar orci ac rhoncus. Nunc dapibus lacus in iaculis pretium. Donec tempor dui eu justo
+                    dignissim,
+                    sit amet dapibus purus vulputate.</p>
+
+                  <p>Maecenas dignissim dui vitae nisl volutpat, quis scelerisque odio venenatis. Morbi condimentum
+                    luctus
+                    ipsum, a vehicula nulla volutpat at. Aliquam eget magna id augue elementum porta. Morbi sodales nisl
+                    sed arcu ornare, vestibulum ullamcorper dui fringilla. Ut rutrum, lectus imperdiet iaculis dictum,
+                    enim ligula euismod mi, eu fermentum mi purus sagittis ipsum. Aenean ultrices felis ut egestas
+                    hendrerit. Aenean varius tellus ut rhoncus ornare. Proin dictum, mi sit amet varius elementum, risus
+                    velit vulputate eros, et varius est erat luctus lectus. Nam euismod pulvinar leo in malesuada. Nunc
+                    nunc tortor, vestibulum vel semper et, condimentum vel neque. Cras sagittis nulla ut tristique
+                    mattis.
+                    Maecenas sodales faucibus vulputate. Sed commodo dapibus purus, vel faucibus erat tristique ac.
+                    Quisque aliquam massa non massa convallis rhoncus. Praesent sodales, orci non viverra consectetur,
+                    nisl est scelerisque nulla, vel tincidunt ex felis non lacus.</p>
+
+                  <p>Suspendisse vitae diam vitae nulla ultrices maximus vel in leo. In hac habitasse platea dictumst.
+                    Fusce eu facilisis tellus. Donec eget nibh id erat sodales ultrices ut nec mauris. Pellentesque erat
+                    nulla, semper sed metus vitae, tincidunt auctor turpis. In hac habitasse platea dictumst. Duis vitae
+                    ligula faucibus mi auctor ullamcorper. Curabitur ac neque purus. Nunc eleifend varius augue, at
+                    ullamcorper velit convallis sollicitudin. Sed dictum metus nec dolor vulputate, vitae vehicula
+                    sapien
+                    dictum. Morbi vestibulum scelerisque venenatis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="mb-4">
+            <figure class="product-figure mb-1">
+              <h5>TIN TỨC</h5>
+              <a href="#" class="m-0">Xem thêm</a>
+            </figure>
+            <div class="list-group list-group-flush border-left border-right border-bottom">
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-new-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;"
+                >
+                  <div class="image-content">
+                    <h6 class="m-0 color-white" style="font-size: 20px; line-height: 16px;">18</h6>
+                    <h6 class="m-0 color-white">Jan</h6>
+                  </div>
+                </div>
+                <h6 class="m-0">Đàn piano 132 có gì hay</h6>
+              </a>
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-new-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;"
+                >
+                  <div class="image-content">
+                    <h6 class="m-0 color-white" style="font-size: 20px; line-height: 16px;">18</h6>
+                    <h6 class="m-0 color-white">Jan</h6>
+                  </div>
+                </div>
+                <h6 class="m-0">Đàn piano 132 có gì hay</h6>
+              </a>
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-new-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;"
+                >
+                  <div class="image-content">
+                    <h6 class="m-0 color-white" style="font-size: 20px; line-height: 16px;">18</h6>
+                    <h6 class="m-0 color-white">Jan</h6>
+                  </div>
+                </div>
+                <h6 class="m-0">Đàn piano 132 có gì hay</h6>
+              </a>
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-new-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;"
+                >
+                  <div class="image-content">
+                    <h6 class="m-0 color-white" style="font-size: 20px; line-height: 16px;">18</h6>
+                    <h6 class="m-0 color-white">Jan</h6>
+                  </div>
+                </div>
+                <h6 class="m-0">Đàn piano 132 có gì hay</h6>
+              </a>
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-new-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;"
+                >
+                  <div class="image-content">
+                    <h6 class="m-0 color-white" style="font-size: 20px; line-height: 16px;">18</h6>
+                    <h6 class="m-0 color-white">Jan</h6>
+                  </div>
+                </div>
+                <h6 class="m-0">Đàn piano 132 có gì hay</h6>
+              </a>
+            </div>
+          </div>
+          <div class="mb-4">
+            <figure class="product-figure mb-1">
+              <h5>DANH MỤC SẢN PHẨM</h5>
+            </figure>
+            <div class="list-group list-group-flush border-left border-right border-bottom">
+              <a href="#" class="list-group-item list-group-item-action">Đàn Piano</a>
+              <a href="#" class="list-group-item list-group-item-action">Khuyến mãi</a>
+              <a href="#" class="list-group-item list-group-item-action">Tin tức</a>
+            </div>
+          </div>
+          <div class="mb-4">
+            <figure class="product-figure mb-1">
+              <h5>HOTLINE</h5>
+            </figure>
+            <div class="list-group list-group-flush border-left border-right border-bottom">
+              <a href="#" class="list-group-item list-group-item-action p-2">
+                <i class="material-icons" style="font-size: 16px">location_on</i>
+                Hà Nội: 1800 XXXX
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-2">
+                <i class="material-icons" style="font-size: 16px">location_on</i>
+                Đà Nẵng: 1800 XXXX
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-2">
+                <i class="material-icons" style="font-size: 16px">location_on</i>
+                Quảng Ngãi: 1800 XXXX
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-2">
+                <i class="material-icons" style="font-size: 16px">location_on</i>
+                Hồ Chí Minh: 1800 XXXX
+              </a>
+            </div>
+          </div>
+          <div class="border p-3 bg-white mb-4">
+            <h6 class="text-center">Tại sao nên chọn đàn của chúng tôi?</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center p-2">
+                <img src="../image/certificate.png" height="20px" width="auto">
+                <p class="ml-3 mb-0">100% piano chính hãng.</p>
+              </li>
+              <li class="list-group-item d-flex align-items-center p-2">
+                <img src="../image/refresh.png" height="20px" width="auto">
+                <p class="ml-3 mb-0">Đổi trả hàng trong 30 ngày đầu.</p>
+              </li>
+              <li class="list-group-item d-flex align-items-center p-2">
+                <img src="../image/protect-filled.png" height="20px" width="auto">
+                <p class="ml-3 mb-0">Bảo hành 36 tháng.</p>
+              </li>
+              <li class="list-group-item d-flex align-items-center p-2">
+                <img src="../image/itruck-filled.png" height="20px" width="auto">
+                <p class="ml-3 mb-0">Giao hàng toàn quốc.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid about-footer-container">
+      <div class="container pt-3 pb-3">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="p-2">
+              <div class="about-text">
+                <h6>Về chúng tôi</h6>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare viverra
+                  nunc ut aliquam. Morbi
+                  gravida posuere urna a ultrices. Quisque tincidunt efficitur ligula et imperdiet. Quisque vitae
+                  sollicitudin
+                  nulla. Integer mauris magna, eleifend at hendrerit in, efficitur quis lacus. Sed nec vulputate odio.
+                  Aenean
+                  ac arcu turpis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="p-2">
+              <div class="about-text">
+                <h6>Liên kết liên quan</h6>
+                <ul class="pl-3">
+                  <li>Điều kiện & Điều khoản</li>
+                  <li>Quy chế hoạt động</li>
+                  <li>Câu hỏi thường gặp</li>
+                  <li>Tin khuyến mãi</li>
+                  <li>Hệ thống chi nhánhánh</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="p-2">
+              <div class="about-text">
+                <h6>Liên hệ</h6>
+                <p>Tư vấn miễn phí (24/7):</p>
+                <span class="hotline">1800 XXXX</span>
+                <p>Góp ý, phản ánh (8h00 - 22h00):</p>
+                <span class="hotline">1800 XXXX</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="p-2">
+              <div class="about-text text-left">
+                <h6>Liên kết</h6>
+                <p><i class="material-icons" style="font-size: 16px">email</i> Email: hotro@pianoshop.com</p>
+                <p><i class="fa fa-facebook-official"></i> Fanpage: fb.com/pianoshop</p>
+                <p><i class="fa fa-youtube-play"></i> Youtube: Piano Shop</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="p-2">
+              <div class="about-text">
+                <h6>Chi nhánh</h6>
+                <p><i class="material-icons" style="font-size: 16px">location_on</i> HCM: Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Mauris ornare viverra nunc ut aliquam.</p>
+                <p><i class="material-icons" style="font-size: 16px">location_on</i> HN: Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Mauris ornare viverra nunc ut aliquam.</p>
+                <p><i class="material-icons" style="font-size: 16px">location_on</i> Đà Nẵng: Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Mauris ornare viverra nunc ut aliquam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid copyright-footer-container">
+      <div class="container d-flex justify-content-between pt-1 pb-1">
+        <div class="copyright-content">
+          <p class="mb-0">Copyright © 2018</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fa fa-facebook-official mr-2"></i>
+          <i class="fa fa-youtube-play"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btn bg-yellow button-top" onclick="topFunction()" id="upToTop" title="Up to top">
+    <i class="fa fa-chevron-up" style="font-size:20px"></i>
+  </button>
+
+  <div class="hotline-phone-ring-wrap">
+    <div class="hotline-phone-ring">
+      <div class="hotline-phone-ring-circle"></div>
+      <div class="hotline-phone-ring-circle-fill"></div>
+      <div class="hotline-phone-ring-img-circle">
+        <a href="tel:xxxxxxxxxx" class="pps-btn-img">
+          <img src="../image/phone-icon.png" alt="Gọi điện thoại" width="50">
+        </a>
+      </div>
+    </div>
+    <div class="hotline-bar">
+      <a href="tel:xxxxxxxxxx">
+        <span class="text-hotline">xxxx.xxx.xxx</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+        $("#upToTop").css("display", "block");
+      } else {
+        $("#upToTop").css("display", "none");
+      }
+    }
+
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showSearch() {
+      $('.form-search').toggleClass('show-form-search');
+    }
+  </script>
+</body>
+
+</html>

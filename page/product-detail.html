@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Piano Shop</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <nav class="bg-yellow">
+    <div class="navbar-container">
+      <div class="navbar navbar-expand-md bg-yellow navbar-light p-0">
+        <div class="custom-navbar-brand ml-3">
+          <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Piano Shop</a>
+        </div>
+        <div class="collapse navbar-collapse mr-auto" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item nav-item-actived">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/home-white-icon.png" height="24px" width="auto" alt="">
+                Trang chủ
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/piano-icon.png" height="24px" width="auto" alt="">
+                Đàn piano
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/sale-icon.png" height="24px" width="auto" alt="">
+                Khuyến mãi
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/news-icon.png" height="24px" width="auto" alt="">
+                Tin tức
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-nav-link" href="#">
+                <img src="../image/code-icon.png" height="24px" width="auto" alt="">
+                Seri check
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <button class="btn search-icon mr-sm-2 mr-md-0" onclick="showSearch()">
+            <img src="../image/search-icon.png" height="24px" width="auto" alt="">
+          </button>
+          <button class="position-relative btn mr-sm-2 mr-md-0">
+            <img src="../image/cart-icon.png" height="22px" width="auto" />
+            <div class="cart-aler">3</div>
+          </button>
+        </div>
+      </div>
+      <form class="form-group form-search">
+        <input id="search" class="form-control mr-2" type="text" placeholder="Tìm kiếm">
+      </form>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <ul class="breadcrumb custom-breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="#">Sản phẩm</a></li>
+        <li class="breadcrumb-item active">Đàn piano</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="main-detail border p-3">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-xl-2 col-md-12 pr-xl-0 order-xl-1 order-2">
+                <div class="row m-0 mb-sm-0 mb-3">
+                  <div class="col-xl-12 col-3 pr-1 pl-1">
+                    <div class="product-image mb-xl-2 mt-xl-0 mt-2"
+                      style="background: url(../image/piano-1.jpg) no-repeat; background-position: center; background-size: cover;">
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-3 pr-1 pl-1">
+                    <div class="product-image mb-xl-2 mt-xl-0 mt-2"
+                      style="background: url(../image/piano-1.jpg) no-repeat; background-position: center; background-size: cover;">
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-3 pr-1 pl-1">
+                    <div class="product-image mb-xl-2 mt-xl-0 mt-2"
+                      style="background: url(../image/piano-1.jpg) no-repeat; background-position: center; background-size: cover;">
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-3 pr-1 pl-1">
+                    <div class="product-image mb-xl-2 mt-xl-0 mt-2"
+                      style="background: url(../image/piano-1.jpg) no-repeat; background-position: center; background-size: cover;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-10 col-md-12 pr-xl-0 order-xl-2 order-1">
+                <div class="product-image"
+                  style="background: url(../image/piano-1.jpg) no-repeat; background-position: center; background-size: cover;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="product-name">Piano Diapason 132</h3>
+            <div class="d-flex">
+              <p class="mr-4">Thương hiệu: Yamaha</p>
+              <p>SKU: 7372022141706</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <h4 class="product-price m-0 mr-3">25.000.000đ</h4>
+              <div class="badge badge-pill bg-yellow">-15%</div>
+            </div>
+            <p class="product-original-price">29.500.000đ</p>
+            <div class="promotion-container p-2">
+              <div class="d-flex border-bottom p-2">
+                <div class="promotion-title">
+                  <img src="../image/gift-icon.png" class="mr-1" height="20" width="auto" alt="">
+                  Khuyến mãi:
+                </div>
+                <ul class="promotion-content">
+                  <li>5 Bộ phụ kiện cao cấp tặng kèm theo đàn</li>
+                  <li>Khóa học đàn piano miễn phí</li>
+                  <li>Giáo trình học cơ bản</li>
+                </ul>
+              </div>
+              <div class="d-flex p-2">
+                <div class="promotion-title align-items-center">
+                  <img src="../image/truck-icon.png" class="mr-1" height="20" width="auto" alt="">
+                  Vận chuyển:
+                </div>
+                <div class="">Miễn phí vận chuyển, giao đàn tận nơi</div>
+              </div>
+            </div>
+            <div class="d-flex">
+              <button type="button" class="d-flex align-items-center btn btn-danger rounded-0 pl-4 pr-4">
+                <img src="../image/cart-white-icon.png" class="mr-2" height="20" width="auto" alt="">
+                CHỌN MUA
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="mb-4">
+            <figure class="product-tab mb-1">
+              <h5 class="product-tab-link product-tab-link-actived" onclick="openTab(event, 'description')">MÔ TẢ</h5>
+              <h5 class="product-tab-link" onclick="openTab(event, 'specifications')">THÔNG SỐ</h5>
+              <h5 class="product-tab-link" onclick="openTab(event, 'review')">ĐÁNH GIÁ</h5>
+            </figure>
+            <div id="description" class="more-detail border" style="display: block;">
+              Đang cập nhật...
+            </div>
+            <div id="specifications" class="more-detail border" style="display: none;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item p-2">
+                  <div class="d-flex">
+                    <div class="specifications-title">Nhà sản xuất:</div>
+                    <div>Belton</div>
+                  </div>
+                </li>
+                <li class="list-group-item p-2">
+                  <div class="d-flex">
+                    <div class="specifications-title">Model:</div>
+                    <div>Fu33</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="review" class="more-detail border" style="display: none;">
+              Ranking
+            </div>
+          </div>
+          <div class="mb-4">
+            <figure class="product-figure mb-1">
+              <h5>SẢN PHẨM TƯƠNG TỰ</h5>
+              <a href="#" class="m-0">Xem thêm</a>
+            </figure>
+            <div class="row" style="margin: 0 -0.25em;">
+              <div class="col-md-3 col-sm-6 col-6 p-1">
+                <div class="card custom-card">
+                  <div class="card-img-top product-card-image"
+                    style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                  </div>
+                  <div class="card-body">
+                    <div class="product-card-name">Piano Diapason 132</div>
+                  </div>
+                  <div class="more-card-info">
+                    <h5 class="color-yellow mb-4">Piano Diapason 132</h5>
+                    <h6>Thông số:</h6>
+                    <ul class="product-card-info">
+                      <li>Nhà sản xuất: Belton</li>
+                      <li>Model: Fu33</li>
+                      <li>Màu: Đen</li>
+                      <li>Chứng từ Gốc: Chứng nhận xuất xứ C/O - Chứng nhận chất lượng C/Q</li>
+                      <li>Bàn Phím: 88 phím (Phím Xương, Phenolic Resins)</li>
+                      <li>Bàn đạp: Grand: Soft Pedal, Sostenuto Pedal, Forte Pedal - Upright: Damper, Muffler, Soft</li>
+                      <li>Kích thước: Dài: 150 cm | Cao: 131cm | Rộng: 60 cm | Nặng: 220 kg</li>
+                      <li>Bảo hành: 12 Năm</li>
+                      <li>Xuất xứ: Nhật Bản</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer product-card-price">
+                    29.500.000đ
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6 p-1">
+                <div class="card custom-card">
+                  <div class="card-img-top product-card-image"
+                    style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                  </div>
+                  <div class="card-body">
+                    <div class="product-card-name">Piano Diapason 132</div>
+                  </div>
+                  <div class="more-card-info">
+                    <h5 class="color-yellow mb-4">Piano Diapason 132</h5>
+                    <h6>Thông số:</h6>
+                    <ul class="product-card-info">
+                      <li>Nhà sản xuất: Belton</li>
+                      <li>Model: Fu33</li>
+                      <li>Màu: Đen</li>
+                      <li>Chứng từ Gốc: Chứng nhận xuất xứ C/O - Chứng nhận chất lượng C/Q</li>
+                      <li>Bàn Phím: 88 phím (Phím Xương, Phenolic Resins)</li>
+                      <li>Bàn đạp: Grand: Soft Pedal, Sostenuto Pedal, Forte Pedal - Upright: Damper, Muffler, Soft</li>
+                      <li>Kích thước: Dài: 150 cm | Cao: 131cm | Rộng: 60 cm | Nặng: 220 kg</li>
+                      <li>Bảo hành: 12 Năm</li>
+                      <li>Xuất xứ: Nhật Bản</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer product-card-price">
+                    29.500.000đ
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6 p-1">
+                <div class="card custom-card">
+                  <div class="card-img-top product-card-image"
+                    style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                  </div>
+                  <div class="card-body">
+                    <div class="product-card-name">Piano Diapason 132</div>
+                  </div>
+                  <div class="more-card-info">
+                    <h5 class="color-yellow mb-4">Piano Diapason 132</h5>
+                    <h6>Thông số:</h6>
+                    <ul class="product-card-info">
+                      <li>Nhà sản xuất: Belton</li>
+                      <li>Model: Fu33</li>
+                      <li>Màu: Đen</li>
+                      <li>Chứng từ Gốc: Chứng nhận xuất xứ C/O - Chứng nhận chất lượng C/Q</li>
+                      <li>Bàn Phím: 88 phím (Phím Xương, Phenolic Resins)</li>
+                      <li>Bàn đạp: Grand: Soft Pedal, Sostenuto Pedal, Forte Pedal - Upright: Damper, Muffler, Soft</li>
+                      <li>Kích thước: Dài: 150 cm | Cao: 131cm | Rộng: 60 cm | Nặng: 220 kg</li>
+                      <li>Bảo hành: 12 Năm</li>
+                      <li>Xuất xứ: Nhật Bản</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer product-card-price">
+                    29.500.000đ
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6 p-1">
+                <div class="card custom-card">
+                  <div class="card-img-top product-card-image"
+                    style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                  </div>
+                  <div class="card-body">
+                    <div class="product-card-name">Piano Diapason 132</div>
+                  </div>
+                  <div class="more-card-info">
+                    <h5 class="color-yellow mb-4">Piano Diapason 132</h5>
+                    <h6>Thông số:</h6>
+                    <ul class="product-card-info">
+                      <li>Nhà sản xuất: Belton</li>
+                      <li>Model: Fu33</li>
+                      <li>Màu: Đen</li>
+                      <li>Chứng từ Gốc: Chứng nhận xuất xứ C/O - Chứng nhận chất lượng C/Q</li>
+                      <li>Bàn Phím: 88 phím (Phím Xương, Phenolic Resins)</li>
+                      <li>Bàn đạp: Grand: Soft Pedal, Sostenuto Pedal, Forte Pedal - Upright: Damper, Muffler, Soft</li>
+                      <li>Kích thước: Dài: 150 cm | Cao: 131cm | Rộng: 60 cm | Nặng: 220 kg</li>
+                      <li>Bảo hành: 12 Năm</li>
+                      <li>Xuất xứ: Nhật Bản</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer product-card-price">
+                    29.500.000đ
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="mb-4">
+            <figure class="product-figure mb-1">
+              <h5>SẢM PHẨM</h5>
+              <a href="#" class="m-0">Xem thêm</a>
+            </figure>
+            <div class="list-group list-group-flush border-left border-right border-bottom">
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-product-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                </div>
+                <div class="d-flex flex-column justify-content-between overflow-hidden w-100">
+                  <h6 class="m-0 text-truncate">Đàn piano 132</h6>
+                  <h6 class="product-price m-0 text-right">25.000.000đ</h6>
+                </div>
+              </a>
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-product-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                </div>
+                <div class="d-flex flex-column justify-content-between overflow-hidden w-100">
+                  <h6 class="m-0 text-truncate">Đàn piano 132</h6>
+                  <h6 class="product-price m-0 text-right">25.000.000đ</h6>
+                </div>
+              </a>
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-product-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                </div>
+                <div class="d-flex flex-column justify-content-between overflow-hidden w-100">
+                  <h6 class="m-0 text-truncate">Đàn piano 132</h6>
+                  <h6 class="product-price m-0 text-right">25.000.000đ</h6>
+                </div>
+              </a>
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-product-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                </div>
+                <div class="d-flex flex-column justify-content-between overflow-hidden w-100">
+                  <h6 class="m-0 text-truncate">Đàn piano 132</h6>
+                  <h6 class="product-price m-0 text-right">25.000.000đ</h6>
+                </div>
+              </a>
+              <a href="#" class="d-flex list-group-item list-group-item-action p-2">
+                <div class="mini-product-image mr-2"
+                  style="background: url(../image/piano-2.jpg) no-repeat; background-position: center; background-size: cover;">
+                </div>
+                <div class="d-flex flex-column justify-content-between overflow-hidden w-100">
+                  <h6 class="m-0 text-truncate">Đàn piano 132</h6>
+                  <h6 class="product-price m-0 text-right">25.000.000đ</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="mb-4">
+            <figure class="product-figure mb-1">
+              <h5>DANH MỤC SẢN PHẨM</h5>
+            </figure>
+            <div class="list-group list-group-flush border-left border-right">
+              <a href="#" class="list-group-item list-group-item-action">Đàn Piano</a>
+              <a href="#" class="list-group-item list-group-item-action">Khuyến mãi</a>
+              <a href="#" class="list-group-item list-group-item-action">Tin tức</a>
+            </div>
+          </div>
+          <div class="mb-4">
+            <figure class="product-figure mb-1">
+              <h5>HOTLINE</h5>
+            </figure>
+            <div class="list-group list-group-flush border-left border-right">
+              <a href="#" class="list-group-item list-group-item-action p-2">
+                <i class="material-icons" style="font-size: 16px">location_on</i>
+                Hà Nội: 1800 XXXX
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-2">
+                <i class="material-icons" style="font-size: 16px">location_on</i>
+                Đà Nẵng: 1800 XXXX
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-2">
+                <i class="material-icons" style="font-size: 16px">location_on</i>
+                Quảng Ngãi: 1800 XXXX
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-2">
+                <i class="material-icons" style="font-size: 16px">location_on</i>
+                Hồ Chí Minh: 1800 XXXX
+              </a>
+            </div>
+          </div>
+          <div class="border p-3 bg-white mb-4">
+            <h6 class="text-center">Tại sao nên chọn đàn của chúng tôi?</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center p-2">
+                <img src="../image/certificate.png" height="20px" width="auto">
+                <p class="ml-3 mb-0">100% piano chính hãng.</p>
+              </li>
+              <li class="list-group-item d-flex align-items-center p-2">
+                <img src="../image/refresh.png" height="20px" width="auto">
+                <p class="ml-3 mb-0">Đổi trả hàng trong 30 ngày đầu.</p>
+              </li>
+              <li class="list-group-item d-flex align-items-center p-2">
+                <img src="../image/protect-filled.png" height="20px" width="auto">
+                <p class="ml-3 mb-0">Bảo hành 36 tháng.</p>
+              </li>
+              <li class="list-group-item d-flex align-items-center p-2">
+                <img src="../image/itruck-filled.png" height="20px" width="auto">
+                <p class="ml-3 mb-0">Giao hàng toàn quốc.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid about-footer-container">
+      <div class="container pt-3 pb-3">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="p-2">
+              <div class="about-text">
+                <h6>Về chúng tôi</h6>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare viverra
+                  nunc ut aliquam. Morbi
+                  gravida posuere urna a ultrices. Quisque tincidunt efficitur ligula et imperdiet. Quisque vitae
+                  sollicitudin
+                  nulla. Integer mauris magna, eleifend at hendrerit in, efficitur quis lacus. Sed nec vulputate odio.
+                  Aenean
+                  ac arcu turpis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="p-2">
+              <div class="about-text">
+                <h6>Liên kết liên quan</h6>
+                <ul class="pl-3">
+                  <li>Điều kiện & Điều khoản</li>
+                  <li>Quy chế hoạt động</li>
+                  <li>Câu hỏi thường gặp</li>
+                  <li>Tin khuyến mãi</li>
+                  <li>Hệ thống chi nhánhánh</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="p-2">
+              <div class="about-text">
+                <h6>Liên hệ</h6>
+                <p>Tư vấn miễn phí (24/7):</p>
+                <span class="hotline">1800 XXXX</span>
+                <p>Góp ý, phản ánh (8h00 - 22h00):</p>
+                <span class="hotline">1800 XXXX</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="p-2">
+              <div class="about-text text-left">
+                <h6>Liên kết</h6>
+                <p><i class="material-icons" style="font-size: 16px">email</i> Email: hotro@pianoshop.com</p>
+                <p><i class="fa fa-facebook-official"></i> Fanpage: fb.com/pianoshop</p>
+                <p><i class="fa fa-youtube-play"></i> Youtube: Piano Shop</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="p-2">
+              <div class="about-text">
+                <h6>Chi nhánh</h6>
+                <p><i class="material-icons" style="font-size: 16px">location_on</i> HCM: Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Mauris ornare viverra nunc ut aliquam.</p>
+                <p><i class="material-icons" style="font-size: 16px">location_on</i> HN: Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Mauris ornare viverra nunc ut aliquam.</p>
+                <p><i class="material-icons" style="font-size: 16px">location_on</i> Đà Nẵng: Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Mauris ornare viverra nunc ut aliquam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid copyright-footer-container">
+      <div class="container d-flex justify-content-between pt-1 pb-1">
+        <div class="copyright-content">
+          <p class="mb-0">Copyright © 2018</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="fa fa-facebook-official mr-2"></i>
+          <i class="fa fa-youtube-play"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- The Modal -->
+  <div class="modal hide fade" id="swiperModal">
+    <div class="modal-dialog modal-dialog-centered custom-modal">
+      <div class="modal-content border-0 rounded-0">
+
+        <!-- Modal Header -->
+        <div class="modal-header pt-2 pb-2">
+          <h4 class="modal-title">Các chi nhánh của chúng tôi</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img src="../image/piano-2.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img src="../image/piano-2.jpg">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                  <img src="../image/piano-2.jpg">
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn bg-yellow button-top" onclick="topFunction()" id="upToTop" title="Up to top">
+    <i class="fa fa-chevron-up" style="font-size:20px"></i>
+  </button>
+
+  <div class="hotline-phone-ring-wrap">
+    <div class="hotline-phone-ring">
+      <div class="hotline-phone-ring-circle"></div>
+      <div class="hotline-phone-ring-circle-fill"></div>
+      <div class="hotline-phone-ring-img-circle">
+        <a href="tel:xxxxxxxxxx" class="pps-btn-img">
+          <img src="../image/phone-icon.png" alt="Gọi điện thoại" width="50">
+        </a>
+      </div>
+    </div>
+    <div class="hotline-bar">
+      <a href="tel:xxxxxxxxxx">
+        <span class="text-hotline">xxxx.xxx.xxx</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+        $("#upToTop").css("display", "block");
+      } else {
+        $("#upToTop").css("display", "none");
+      }
+    }
+
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showSearch() {
+      $('.form-search').toggleClass('show-form-search');
+    }
+
+    $('.product-image').click(function () {
+      $('#swiperModal').modal('show');
+    });
+
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("more-detail");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("product-tab-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" product-tab-link-actived", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " product-tab-link-actived";
+    }
+
+    var swiper = new Swiper('.swiper-container', {
+      zoom: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>
